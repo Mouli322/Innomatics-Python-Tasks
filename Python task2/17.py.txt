@@ -1,0 +1,8 @@
+n = int(input())
+
+for i in range(T):
+    a = input()
+    b = set(input().split())
+    c = int(input())
+    d = set(input().split())
+    print(b.issubset(d))

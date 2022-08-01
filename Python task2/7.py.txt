@@ -1,0 +1,11 @@
+a,b=list(map(int, input().split()))
+n=list(map(int, input().split()))
+i=set(map(int, input().split()))
+s=set(map(int, input().split()))
+result=0
+for x in n:
+    if x in i:
+        result+=1
+    elif x in s:
+        result-=1
+print(result)
