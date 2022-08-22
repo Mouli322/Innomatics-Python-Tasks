@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex</title>
+  </head>
+  <body>
+    <form action="{{url_for('result_function')}}" method="post">
+      <label><h3>Regex Expression</h3></label>
+      <textarea
+        rows="2"
+        cols="25"
+        type="text"
+        name="in_1"
+        placeholder="insert your regular expression here"
+      ></textarea>
+      <label><h3>Enter your test String</h3></label>
+      <textarea
+        rows="2"
+        cols="25"
+        type="text"
+        name="in_2"
+        placeholder="enter your test string here"
+      ></textarea
+      ><br /><br />
+      <button style="font-size: 20px">SUBMIT</button>
+    </form>
+    <form method="post">
+      <label><h3>number of matches found:</h3></label>
+      <textarea rows="2" cols="20" type="text" name="ou_1"></textarea>
+      <label
+        ><h3>
+           matches found for
+        </h3></label
+      >
+      <textarea rows="5" cols="20" type="text" name="ou_2"></textarea>
+    </form>
+  </body>
+</html>
