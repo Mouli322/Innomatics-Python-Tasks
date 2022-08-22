@@ -1,0 +1,20 @@
+Task 4 - Basic
+
+SWAP CASE
+
+def swap_case(s):
+    string=[]
+    for i in range(len(s)):
+        if s[i].isupper()== True:
+            string.append(s[i].lower())
+        elif s[i].islower() == True:
+            string.append(s[i].upper())
+        else:
+            string.append(s[i])
+        string1=''
+    return string1.join(string)
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)

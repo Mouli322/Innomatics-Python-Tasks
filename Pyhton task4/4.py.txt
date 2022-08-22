@@ -1,0 +1,14 @@
+Mutation
+
+
+def mutate_string(string, position, character):
+    mutate=list(string)
+    mutate[position]=character
+    string=''.join(mutate)
+    return string
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
