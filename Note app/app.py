@@ -5,7 +5,7 @@ app = Flask(__name__)
 notes = []
 
 
-@app.route('/', methods=["get", "post"])
+@app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == 'POST':
         note = request.form.get("note")
